@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        td[id*='n1']::after{content: "*"; color: red;}
+        td[id*='m1']::after{content: "*"; color: red;}
+        td[id*='em1']::after{content: "*"; color: red;}
+    </style>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <center>
+        <h2> User Details </h2>
+        <table>
+            <tr>
+                <td>
+                    <div>
+                        <table style="text-align: left;" style="padding: 15px;">
+                            <tr>
+                                <td id='n1'>Name</td>
+                                <td>
+                                    <input type="text" id="name" required>
+                                </td>
+                                <td id="nameWarning" style="color: red;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td id='a1'>Address</td>
+                                <td>
+                                    <textarea id="address"></textarea>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td id='m1'>Mobile Number</td>
+                                <td>
+                                    <input type="tel" id="mobile">
+                                </td>
+                                <td id="mobileWarning" style="color: red;"></td>
+                            </tr>
+                            <tr>
+                                <td id='em1'>E-mail Id</td>
+                                <td>
+                                    <input type="email" id="email">
+                                </td>
+                                <td id="emailWarning" style="color: red;"></td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <button id="submit" onclick="validate()">Submit</button>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id='result'></div>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>

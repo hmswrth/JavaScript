@@ -1,0 +1,59 @@
+<html>
+<style>
+h2{
+margin-top:30px;
+margin-left:50px;
+}
+div{
+margin-top:20px;
+margin-left:500px;
+}
+select{
+margin-left:30px;
+}
+input{
+margin-left:12px;
+}
+button{
+margin-left:10px;
+}
+#calculate{
+margin-left:125px;
+}
+#result{
+margin-left:50px;
+}
+
+</style>
+<head>
+<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+<div>
+<h2>Expenses</h2> 
+</div>
+
+<div>
+<label>Expense Code</label>
+<select id="code">
+<option value="930300">930300</option>
+<option value="930350">930350</option>
+<option value="930400">930400</option>
+<option value="930450">930450</option>
+<option value="930500">930500</option>
+</select>
+</div>
+
+<div>
+<label>Expense Amount</label>
+<input type="text" id="amount" size="15">
+<button id="add" onClick="add()">Add</button>
+</div>
+
+<div>
+<button id="calculate" onClick="calculate()">Calculate</button>
+</div>
+
+<div id="result" align="center"></div>
+</body>
+</html>	 	  	    	    		        	 	
