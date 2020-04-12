@@ -1,2 +1,2 @@
 # JavaScript
-JavaScript_Basics
+Various JavaScript applications.
